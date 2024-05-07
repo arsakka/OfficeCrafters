@@ -2,7 +2,6 @@
 const nextConfig = {
     output: "export",
     reactStrictMode: true,
-    basePath: "/OfficeCrafters",
 };
 
 export default nextConfig;
