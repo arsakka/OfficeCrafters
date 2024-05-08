@@ -1,6 +1,12 @@
 /** @type {import('next').NextConfig} */
 
 const getOptions = () => {
+    if (!process.env.TARGET_ENVIRONMENT) {
+        return {
+            basePath: "/OfficeCrafters",
+        };
+    }
+
     if (process.env.TARGET_ENVIRONMENT === "development") {
         return {
             images: {
@@ -8,10 +14,6 @@ const getOptions = () => {
             },
         };
     }
-
-    return {
-        basePath: "/OfficeCrafters",
-    };
 };
 
 const nextConfig = {
