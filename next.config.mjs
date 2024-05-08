@@ -2,9 +2,7 @@
 
 const getOptions = () => {
     if (!process.env.TARGET_ENVIRONMENT) {
-        return {
-            basePath: "/OfficeCrafters",
-        };
+        return;
     }
 
     if (process.env.TARGET_ENVIRONMENT === "development") {
@@ -12,6 +10,12 @@ const getOptions = () => {
             images: {
                 unoptimized: true,
             },
+        };
+    }
+
+    if (process.env.TARGET_ENVIRONMENT === "production") {
+        return {
+            basePath: "/OfficeCrafters",
         };
     }
 };
