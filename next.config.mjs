@@ -4,6 +4,9 @@ const getOptions = () => {
     if (!process.env.TARGET_ENVIRONMENT) {
         return {
             basePath: "/OfficeCrafters",
+            images: {
+                unoptimized: true,
+            },
         };
     }
 
