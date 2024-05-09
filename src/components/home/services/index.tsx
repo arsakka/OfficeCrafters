@@ -9,12 +9,14 @@ function Services() {
     <React.Fragment>
       <div className="grid gap-4">
         <div className="flex gap-4">
-          {ServicesList.splice(0, 3).map((service, index) => (
+          {ServicesList.slice(0, 3).map((service, index) => (
             <ServiceBox service={service} key={index} />
           ))}
         </div>
         <div className="flex justify-center">
-          <Link href={"/services"} className={GreenButton}>View More</Link>
+          <Link href={"/services"} className={GreenButton}>
+            View More
+          </Link>
         </div>
       </div>
     </React.Fragment>
