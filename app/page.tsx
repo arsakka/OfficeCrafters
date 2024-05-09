@@ -1,5 +1,6 @@
 import Hero from "@/src/components/home/hero";
 import Services from "@/src/components/home/services";
+import WhyChooseUs from "@/src/components/home/why";
 import React from "react";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <div className="max-w-[1400px] mx-auto m-4 grid gap-4">
         <Services />
+        <WhyChooseUs />
       </div>
     </React.Fragment>
   );
