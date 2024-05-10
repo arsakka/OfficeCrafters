@@ -32,7 +32,7 @@ function Slider({ review }: props) {
           <h3 className="text-lg font-medium text-center">{review.name}</h3>
           <div className="flex gap-2 items-center justify-center text-orange-400">
             {getStars(review.stars).map((star) => (
-              <FaStar size={25} />
+              <FaStar size={25} key={star} />
             ))}
           </div>
           <p className="text-center">{review.testimonial}</p>
