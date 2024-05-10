@@ -1,6 +1,7 @@
 import Hero from "@/src/components/home/hero";
 import Services from "@/src/components/home/services";
 import GetStarted from "@/src/components/home/started";
+import Testimonial from "@/src/components/home/testimonial";
 import WhyChooseUs from "@/src/components/home/why";
 import React from "react";
 
@@ -12,6 +13,7 @@ export default function Home() {
         <Services />
         <WhyChooseUs />
         <GetStarted />
+        <Testimonial />
       </div>
     </React.Fragment>
   );
