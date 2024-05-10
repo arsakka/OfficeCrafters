@@ -16,7 +16,7 @@ function GetStarted() {
               Whether you're looking to lease a new office, redesign your
               existing space, or explore virtual office solutions, we're here to
               help you achieve your goals and elevate your workspace to new
-              heights. Welcome to OfficeCrafters – where your office dreams
+              heights. Welcome to OfficeCrafters. <br /> Where your office dreams
               become reality.
             </p>
           </div>
