@@ -12,7 +12,7 @@ function ContactUs() {
                     <h3>Get in Touch with OfficeCrafters</h3>
                     <p>
                         Have questions or ready to get started on your office
-                        journey? We're here to help! Contact us today to speak
+                        journey? We&apos;re here to help! Contact us today to speak
                         with one of our expert advisors and explore how
                         OfficeCrafters can assist you with all your office
                         needs.
