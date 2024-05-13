@@ -3,6 +3,7 @@ import Services from "@/src/components/home/services";
 import GetStarted from "@/src/components/home/started";
 import Testimonial from "@/src/components/home/testimonial";
 import WhyChooseUs from "@/src/components/home/why";
+import ContactUs from "@/src/components/home/contact";
 import React from "react";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <WhyChooseUs />
         <GetStarted />
         <Testimonial />
+        <ContactUs />
       </div>
     </React.Fragment>
   );
