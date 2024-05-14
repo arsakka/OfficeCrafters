@@ -1,5 +1,5 @@
 import React from "react";
-import SectionHeader from "../../shared/sectionHeader";
+import SectionHeader from "../sectionHeader";
 import MoonModel from "./components/MoonModel";
 import ContactForm from "./components/ContactForm";
 
