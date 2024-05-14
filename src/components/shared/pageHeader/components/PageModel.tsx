@@ -1,7 +1,7 @@
 "use client";
 
 import { CameraControls, Center, PerspectiveCamera } from "@react-three/drei";
-import { Canvas, useLoader } from "@react-three/fiber";
+import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import React, { useRef } from "react";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/Addons.js";
@@ -20,10 +20,16 @@ interface props {
 function LoadModel({ model, rotation }: model) {
     const ref = useRef<THREE.Mesh>(null!);
 
-    const { scene } = useLoader(
+    const { scene, animations } = useLoader(
         GLTFLoader,
         `${process.env.BASE_PATH}/models/${model}`
     );
+
+    const mixer = new THREE.AnimationMixer(scene);
+
+    useFrame((state, deilta) => mixer.update(deilta));
+
+    animations.forEach((clip) => mixer.clipAction(clip).play());
 
     return (
         <mesh ref={ref}>

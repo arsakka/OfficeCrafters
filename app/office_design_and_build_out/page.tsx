@@ -25,11 +25,11 @@ function page() {
                             comprehensive design and build-out solutions to
                             create a customized workspace that inspires
                             creativity, enhances productivity, and fosters
-                            collaboration. Here&apos;s how we can help:
+                            collaboration.
                         </p>
                     </div>
                     <ServicesList
-                        title="Here's what you can expect from our office leasing services:"
+                        title="Here's how we can help:"
                         list={OfficeDesignAndBuildOutList}
                     />
                     <ContactUs />
