@@ -22,6 +22,9 @@ const getOptions = () => {
 const nextConfig = {
     output: "export",
     reactStrictMode: true,
+    env: {
+        BASE_PATH: process.env.BASE_PATH,
+    },
     ...getOptions(),
 };
 

@@ -11,7 +11,7 @@ function LoadModel() {
 
     const { scene, animations } = useLoader(
         GLTFLoader,
-        `${location.origin}/models/truth_about_the_dark_side_of_the_moon.glb`
+        `${process.env.BASE_PATH}/models/truth_about_the_dark_side_of_the_moon.glb`
     );
 
     const mixer = new THREE.AnimationMixer(scene);

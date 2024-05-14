@@ -13,7 +13,7 @@ interface props {
 function LoadModel({ model }: props) {
     const ref = useRef<THREE.Mesh>(null!);
 
-    const { scene } = useLoader(GLTFLoader, `${location.origin}/models/${model}`);
+    const { scene } = useLoader(GLTFLoader, `${process.env.BASE_PATH}/models/${model}`);
 
     return (
         <mesh ref={ref}>
