@@ -1,4 +1,5 @@
 "use client";
+
 import { CameraControls } from "@react-three/drei";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import React, { useRef } from "react";
@@ -10,7 +11,7 @@ function LoadModel() {
 
     const { scene, animations } = useLoader(
         GLTFLoader,
-        "/models/truth_about_the_dark_side_of_the_moon.glb"
+        `${location.origin}/models/truth_about_the_dark_side_of_the_moon.glb`
     );
 
     const mixer = new THREE.AnimationMixer(scene);
