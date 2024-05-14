@@ -13,6 +13,7 @@ function page() {
                     model="isometric_office.glb"
                     fov={13}
                     rotation={[0.3, -0.7, 0]}
+                    scale={1.8}
                 />
                 <div className="max-w-[1400px] mx-auto p-4 grid gap-4">
                     <div>

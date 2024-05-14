@@ -10,9 +10,10 @@ function page() {
             <div className="grid gap-4">
                 <PageHeader
                     title="Office Furniture and Equipment"
-                    model="pc_desk.glb"
-                    fov={2.5}
-                    rotation={[0.3, -0.3, 0]}
+                    model="mfp_office_printer.glb"
+                    fov={10}
+                    rotation={[0.1, 0.5, 0]}
+                    scale={0.08}
                 />
                 <div className="max-w-[1400px] mx-auto p-4 grid gap-4">
                     <div>

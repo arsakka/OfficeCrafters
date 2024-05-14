@@ -9,15 +9,17 @@ import { GLTFLoader } from "three/examples/jsm/Addons.js";
 interface model {
     model: string;
     rotation: number[];
+    scale: number;
 }
 
 interface props {
     model: string;
     fov: number;
     rotation: number[];
+    scale: number;
 }
 
-function LoadModel({ model, rotation }: model) {
+function LoadModel({ model, rotation, scale }: model) {
     const ref = useRef<THREE.Mesh>(null!);
 
     const { scene, animations } = useLoader(
@@ -33,12 +35,12 @@ function LoadModel({ model, rotation }: model) {
 
     return (
         <mesh ref={ref}>
-            <primitive object={scene} scale={1.8} rotation={rotation} />
+            <primitive object={scene} scale={scale} rotation={rotation} />
         </mesh>
     );
 }
 
-function PageModel({ model, fov, rotation }: props) {
+function PageModel({ model, fov, rotation, scale }: props) {
     return (
         <React.Fragment>
             <Canvas style={{ height: "500px" }}>
@@ -52,7 +54,7 @@ function PageModel({ model, fov, rotation }: props) {
                 <pointLight intensity={1} decay={0} />
                 <CameraControls />
                 <Center>
-                    <LoadModel model={model} rotation={rotation} />
+                    <LoadModel model={model} rotation={rotation} scale={scale} />
                 </Center>
             </Canvas>
         </React.Fragment>

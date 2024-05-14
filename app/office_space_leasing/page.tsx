@@ -13,6 +13,7 @@ function index() {
                     model="modern_minimal_lowpoly_office_table_set.glb"
                     fov={3}
                     rotation={[0.1, 0.5, 0]}
+                    scale={1.8}
                 />
                 <div className="max-w-[1400px] mx-auto p-4 grid gap-4">
                     <div>

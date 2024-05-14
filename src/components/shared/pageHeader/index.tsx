@@ -6,9 +6,10 @@ interface props {
     model: string;
     fov: number;
     rotation: number[];
+    scale: number;
 }
 
-function PageHeader({ title, model, fov, rotation }: props) {
+function PageHeader({ title, model, fov, rotation, scale }: props) {
     return (
         <React.Fragment>
             <div className="py-10 px-20 grid gap-4 grid-cols-2 bg-gradient-to-br from-main-green to-transparent">
@@ -18,7 +19,12 @@ function PageHeader({ title, model, fov, rotation }: props) {
                     </h1>
                 </div>
                 <div>
-                    <PageModel model={model} fov={fov} rotation={rotation} />
+                    <PageModel
+                        model={model}
+                        fov={fov}
+                        rotation={rotation}
+                        scale={scale}
+                    />
                 </div>
             </div>
         </React.Fragment>
