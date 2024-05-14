@@ -16,7 +16,7 @@ function ServicesList({ title, list }: props) {
                     {list.map((item, index) => (
                         <div
                             key={index}
-                            className="bg-main-white shadow-md rounded-md py-8 px-6 grid gap-6"
+                            className="bg-main-white shadow-md rounded-md py-8 px-6 grid gap-6 relative"
                         >
                             <h3 className="text-lg text-center font-medium text-main-green">
                                 {item.name}
